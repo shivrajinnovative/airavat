@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Raleway", sans-serif;
+}
+.navbar-brand {
+    margin-bottom: -55px !important;
+    margin-top: -15px !important;
+}
+nav{
+    font-weight: 400;
+}
+nav .active{
+    color: black !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+    font-weight: 700;
+}
+.border-primary{
+    border-color: #ce761db8 !important;
+}
+.bg-dark{
+    background-color: #F9E3CE !important;
+}
+.bg-primary{
+    background-color: #CE761D !important;
+}
+.text-primary{
+    color: #CE761D !important;
+}
+.btn-outline-primary{
+    border-color: #CE761D !important;
+    color:black !important;
+}
+.btn-outline-primary:hover{
+    background:#CE761D;
+    color: white !important;
+}
+.fs-7{
+    font-size: 0.9rem;
+}
+.carousel-indicators{
+    left: auto;
+}
+.carousel-indicators button{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50%;
+}
+.carousel-indicators button.active{
+    background-color: #CE761D;
+}
+.container.about{
+    background: url('./images/Airavat.png') center / contain  no-repeat;
+}
+.bg-light{
+    background: #F8F1EA !important;
+}
+.productSection .product{
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.productSection .product div{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0,0.5);
+    transition: all .3s;
+    cursor: pointer;
+}
+.productSection .product:hover div{
+    top:0
+}
+.productSection .product img{
+    height: 100%;
+    width: 100%;
+}
+.icons{
+    height: 110px;
+    width: 130px;
+    line-height: 110px;
+    text-align: center;
+}
+.icons img{
+    height: 70px;
+    width: 70px;
+}
+header.header{
+    background: center right / cover no-repeat ;
+}
+.aboutHeading{
+    font-weight: 600;
+}
+.aboutHeading::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #CE761D);
+    margin-top: 10px;
+}
+.form-floating label{
+    background-color: transparent !important;
+}
+.form-control:focus {
+    border-color: transparent !important;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.3)!important;
+}
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
+    background-color: transparent;
+}
+.aboutCard{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.aboutCard img{
+    height: 60px;
+    width: 60px;
+}
+.bg-gray{
+    background-color: #F5F5F5;
+}
+.whpIcon{
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    animation: whp 1s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes whp{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
+}
+.productCard{
+    cursor: pointer;
+    transition: all 1s;
+}
+.productCard div{
+    overflow: hidden;
+}
+.productCard div img{
+    transition: all 1s;
+}
+.productCard:hover{
+    box-shadow: 0 0 10px -2px gray;
+}
+.productCard:hover img{
+    transform: scale(1.05)skew(-1deg);
+}
